@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./page/index.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="root">
+    <div class="page">
+      <header class="header">
+        <img
+          class="header__logo"
+          src="./images/header/Vector_Header-logo.svg"
+          alt="Around the U.S. logo"
+        />
+      </header>
+
+      <div class="profile">
+        <img
+          class="profile__image"
+          src="./images/profile/image-profile.jpg"
+          alt="A profile photo of a hansome young-man ;)"
+        />
+
+        <div class="profile__info">
+          <h3 id="name" class="profile__info-name">Jacques Cousteau</h3>
+          <img
+            class="profile__info-edit-button"
+            src="./images/buttons/Edit-Button.svg"
+            alt=""
+            id="edit"
+          />
+          <p id="about" class="profile__info-about">Explorer</p>
+        </div>
+
+        <img
+          class="profile__add-button"
+          src="./images/buttons/Add-Button.svg"
+          alt=""
+        />
+      </div>
+
+      <section class="photo-grid">
+        <ul class="cards">
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="./images/cards/yosemite.jpg"
+              alt="yosemite"
+            />
+
+            <div class="cards__title-wrapper">
+              <h3 class="cards__title">Yosemite Valley</h3>
+              <button
+                type="button"
+                class="cards__like-button"
+                id="yosemite"
+              ></button>
+            </div>
+          </li>
+
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="./images/cards/lake-louise.png"
+              alt="yosemite"
+            />
+
+            <div class="cards__title-wrapper">
+              <h3 class="cards__title">Lake Louise</h3>
+              <button class="cards__like-button" id="lake"></button>
+            </div>
+          </li>
+
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="./images/cards/bald-mountains.png"
+              alt="yosemite"
+            />
+
+            <div class="cards__title-wrapper">
+              <h3 class="cards__title">Bald Mountains</h3>
+              <button class="cards__like-button" id="mountains"></button>
+            </div>
+          </li>
+
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="./images/cards/latemar.png"
+              alt="yosemite"
+            />
+
+            <div class="cards__title-wrapper">
+              <h3 class="cards__title">Latemar</h3>
+              <button class="cards__like-button" id="latemar"></button>
+            </div>
+          </li>
+
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="./images/cards/vanoise.png"
+              alt="yosemite"
+            />
+
+            <div class="cards__title-wrapper">
+              <h3 class="cards__title">Vanoise National Park</h3>
+              <button class="cards__like-button" id="vanoise"></button>
+            </div>
+          </li>
+
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="./images/cards/lago.png"
+              alt="yosemite"
+            />
+
+            <div class="cards__title-wrapper">
+              <h3 class="cards__title">Lago di Braies</h3>
+              <button class="cards__like-button" id="lago"></button>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <p class="footer__text">&copy; 2021 Around The U.S.</p>
+      </footer>
+    </div>
+
+    <div class="popup">
+      <div class="popup-contents">
+        <h3 class="popup-contents__title">Edit profile</h3>
+        <form class="popup-contents__form">
+          <input
+            id="nameInput"
+            value="Jacques Cousteau"
+            type="text"
+            name="name"
+            class="popup-contents__input popup-contents__input_type_name"
+            placeholder="Name"
+          />
+          <input
+            id="aboutInput"
+            value="Explorer"
+            type="text"
+            name="about"
+            class="popup-contents__input popup-contents__input_type_about"
+            placeholder="about me"
+          />
+          <button
+            type="submit"
+            class="popup-contents__submit-button"
+            id="save"
+            onclick="change()"
+          >
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="./styles/javascript.js"></script>
+  </body>
+</html>

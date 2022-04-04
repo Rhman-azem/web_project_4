@@ -1,0 +1,10 @@
+.cards__title-wrapper {
+  min-height: 73px;
+  background-color: white;
+  margin: -4px 0 0 0;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

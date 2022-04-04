@@ -1,0 +1,8 @@
+.popup-contents {
+  position: relative;
+  min-width: 358px;
+  background-color: white;
+  text-align: center;
+  padding: 36px;
+  border-radius: 10px;
+}

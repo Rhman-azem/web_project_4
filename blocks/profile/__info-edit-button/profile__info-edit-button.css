@@ -1,0 +1,10 @@
+.profile__info-edit-button {
+  max-width: 24px;
+  max-height: 24px;
+  margin: 0;
+  transition: 0.5s ease;
+}
+
+.profile__info-edit-button:hover {
+  opacity: 0.6;
+}
