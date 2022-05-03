@@ -1,0 +1,18 @@
+.popup__x-button {
+  max-width: 40px;
+  max-height: 40px;
+  position: absolute;
+  right: -38px;
+  top: -40px;
+}
+
+@media screen and (max-width: 320px) {
+  .popup__x-button {
+    right: 0px;
+    top: -52px;
+  }
+}
+
+.popup__x-button:hover {
+  cursor: pointer;
+}

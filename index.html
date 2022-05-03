@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./page/index.css" />
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,28 +19,26 @@
       </header>
 
       <div class="profile">
-        <img
-          class="profile__image"
-          src="./images/profile/image-profile.jpg"
-          alt="A profile photo of a hansome young-man ;)"
-        />
-
-        <div class="profile__info">
-          <h3 id="name" class="profile__info-name">Jacques Cousteau</h3>
+        <div class="profile__user">
           <img
-            class="profile__info-edit-button"
-            src="./images/buttons/Edit-Button.svg"
-            alt=""
-            id="edit"
+            class="profile__image"
+            src="./images/profile/image-profile.jpg"
+            alt="A profile photo of a hansome young-man ;)"
           />
-          <p id="about" class="profile__info-about">Explorer</p>
+
+          <div class="profile__info">
+            <h3 id="name" class="profile__info-name">Jacques Cousteau</h3>
+            <img
+              class="profile__info-edit-button"
+              src="./images/buttons/Edit-Button.svg"
+              alt=""
+              id="edit"
+            />
+            <p id="about" class="profile__info-about">Explorer</p>
+          </div>
         </div>
 
-        <img
-          class="profile__add-button"
-          src="./images/buttons/Add-Button.svg"
-          alt=""
-        />
+        <div class="profile__add-button"></div>
       </div>
 
       <section class="photo-grid">
@@ -135,8 +134,9 @@
 
     <div class="popup">
       <div class="popup-contents">
+        <img class="popup__x-button" src="./images/buttons/xbutton.svg" />
         <h3 class="popup-contents__title">Edit profile</h3>
-        <form class="popup-contents__form">
+        <form action="" class="popup-contents__form">
           <input
             id="nameInput"
             value="Jacques Cousteau"
@@ -153,12 +153,7 @@
             class="popup-contents__input popup-contents__input_type_about"
             placeholder="about me"
           />
-          <button
-            type="submit"
-            class="popup-contents__submit-button"
-            id="save"
-            onclick="change()"
-          >
+          <button type="submit" class="popup__submit-button" id="save">
             Save
           </button>
         </form>

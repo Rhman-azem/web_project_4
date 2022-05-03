@@ -1,0 +1,14 @@
+.profile__user {
+  display: grid;
+  align-items: center;
+  grid-area: user;
+  grid-template-areas: "image info";
+}
+
+@media screen and (max-width: 320px) {
+  .profile__user {
+    grid-template-areas:
+      "image"
+      "info";
+  }
+}
