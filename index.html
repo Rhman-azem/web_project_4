@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./page/index.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,7 +18,8 @@
         />
       </header>
 
-      <div class="profile">
+      <main>
+      <section class="profile">
         <div class="profile__user">
           <img
             class="profile__image"
@@ -27,19 +28,14 @@
           />
 
           <div class="profile__info">
-            <h3 id="name" class="profile__info-name">Jacques Cousteau</h3>
-            <img
-              class="profile__info-edit-button"
-              src="./images/buttons/Edit-Button.svg"
-              alt=""
-              id="edit"
-            />
-            <p id="about" class="profile__info-about">Explorer</p>
+            <h1 class="profile__info-name">Jacques Cousteau</h1>
+            <button class="profile__info-edit-button" type="button"></button>
+            <p class="profile__info-about">Explorer</p>
           </div>
         </div>
 
-        <div class="profile__add-button"></div>
-      </div>
+        <button class="profile__add-button"></button>
+      </section>
 
       <section class="photo-grid">
         <ul class="cards">
@@ -51,7 +47,7 @@
             />
 
             <div class="cards__title-wrapper">
-              <h3 class="cards__title">Yosemite Valley</h3>
+              <h2 class="cards__title">Yosemite Valley</h2>
               <button
                 type="button"
                 class="cards__like-button"
@@ -68,7 +64,7 @@
             />
 
             <div class="cards__title-wrapper">
-              <h3 class="cards__title">Lake Louise</h3>
+              <h2 class="cards__title">Lake Louise</h2>
               <button class="cards__like-button" id="lake"></button>
             </div>
           </li>
@@ -81,7 +77,7 @@
             />
 
             <div class="cards__title-wrapper">
-              <h3 class="cards__title">Bald Mountains</h3>
+              <h2 class="cards__title">Bald Mountains</h2>
               <button class="cards__like-button" id="mountains"></button>
             </div>
           </li>
@@ -94,7 +90,7 @@
             />
 
             <div class="cards__title-wrapper">
-              <h3 class="cards__title">Latemar</h3>
+              <h2 class="cards__title">Latemar</h2>
               <button class="cards__like-button" id="latemar"></button>
             </div>
           </li>
@@ -107,7 +103,7 @@
             />
 
             <div class="cards__title-wrapper">
-              <h3 class="cards__title">Vanoise National Park</h3>
+              <h2 class="cards__title">Vanoise National Park</h2>
               <button class="cards__like-button" id="vanoise"></button>
             </div>
           </li>
@@ -120,12 +116,13 @@
             />
 
             <div class="cards__title-wrapper">
-              <h3 class="cards__title">Lago di Braies</h3>
+              <h2 class="cards__title">Lago di Braies</h2>
               <button class="cards__like-button" id="lago"></button>
             </div>
           </li>
         </ul>
       </section>
+    </main>
 
       <footer class="footer">
         <p class="footer__text">&copy; 2021 Around The U.S.</p>
@@ -134,11 +131,10 @@
 
     <div class="popup">
       <div class="popup-contents">
-        <img class="popup__x-button" src="./images/buttons/xbutton.svg" />
+        <img class="popup__x-button" src="./images/buttons/xbutton.svg" alt="close button" />
         <h3 class="popup-contents__title">Edit profile</h3>
         <form action="" class="popup-contents__form">
           <input
-            id="nameInput"
             value="Jacques Cousteau"
             type="text"
             name="name"
@@ -146,7 +142,6 @@
             placeholder="Name"
           />
           <input
-            id="aboutInput"
             value="Explorer"
             type="text"
             name="about"
@@ -159,6 +154,6 @@
         </form>
       </div>
     </div>
-    <script src="./styles/javascript.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

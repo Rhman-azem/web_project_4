@@ -1,18 +1,18 @@
 .profile__add-button {
   height: 50px;
   width: 150px;
-  background-image: url("../../../images/buttons/Add-Button.svg");
-  border: none;
+  background: center no-repeat url("../../../images/buttons/plus.svg");
+  border: 2px solid #ffffff;
+  border-radius: 2px;
   transition: 0.5s ease;
   grid-area: add-button;
-  background-color: none;
-  margin: 36px auto 0;
+  margin: 36px auto;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 618px) {
   .profile__add-button {
     width: 282px;
-    background-image: url("../../../images/buttons/Add-Button-long.svg");
+    height: 50px;
   }
 }
 

@@ -8,6 +8,24 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 900px) {
+  .profile {
+    margin: 42px 15px 0;
+  }
+}
+
+@media screen and (max-width: 618px) {
+  .profile {
+    margin: 42px auto 0;
+    max-width: 600px;
+    grid-template-areas:
+      "user"
+      "add-button";
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .profile {
     margin: 42px auto 0;

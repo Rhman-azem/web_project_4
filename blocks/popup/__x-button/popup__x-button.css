@@ -15,4 +15,5 @@
 
 .popup__x-button:hover {
   cursor: pointer;
+  opacity: 0.6;
 }

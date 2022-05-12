@@ -1,10 +1,27 @@
 .profile__info-edit-button {
-  max-width: 24px;
-  max-height: 24px;
-  margin: 0;
+  width: 24px;
+  height: 24px;
+  margin: auto 0;
   transition: 0.5s ease;
+  grid-area: button;
+  background: center no-repeat url("../../../images/buttons/Edit-Button.svg");
+  border: 1px solid #ffffff;
+}
+@media screen and (max-width: 618px) {
+  .profile__info-edit-button {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile__info-edit-button {
+    max-width: 18px;
+    max-height: 18px;
+    margin-left: 10px;
+  }
 }
 
 .profile__info-edit-button:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
