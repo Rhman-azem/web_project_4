@@ -1,35 +1,50 @@
-let edit = document.querySelector(".profile__info-edit-button");
-let popup = document.querySelector(".popup");
-let xButton = document.querySelector(".popup__x-button");
+/**** Selectors ****/
 
-let jobInput;
-let nameInput;
-let showname = document.querySelector(".profile__info-name");
-let showabout = document.querySelector(".profile__info-about");
+const edit = document.querySelector(".profile__info-edit-button");
+const popup = document.querySelector(".popup");
+const xButton = document.querySelector(".popup__x-button");
 
-edit.addEventListener("click", function () {
-  popup.classList.add("popup_active");
-});
+const showName = document.querySelector(".profile__info-name");
+const showAbout = document.querySelector(".profile__info-about");
 
 const formElement = document.querySelector("form");
 
-function handleProfileFormSubmit(evt) {
-  
-  evt.preventDefault();
-  nameInput = document.querySelector(".popup-contents__input_type_name").value;
-  jobInput = document.querySelector(".popup-contents__input_type_about").value;
+const profileInputName = document.querySelector(".popup-contents__input_type_name");
+const profileInputAbout = document.querySelector(".popup-contents__input_type_about");
 
-  showname.textContent = nameInput;
-  showabout.textContent = jobInput;
-  popup.classList.remove("popup_active");
+
+
+/****  Functions ****/
+
+function handleProfileInput(){
+  profileInputName.value = showName.textContent;
+  profileInputAbout.value = showAbout.textContent;
 }
 
-formElement.addEventListener("submit", handleProfileFormSubmit);
+function saveProfileForm(){
+  showName.textContent = profileInputName.value;
+  showAbout.textContent = profileInputAbout.value;
+  handlePopupClose();
+}
 
-
+function handleProfileFormSubmit(evt) {
+  evt.preventDefault();
+  saveProfileForm();
+}
 
 function handlePopupClose() {
   popup.classList.remove("popup_active");
 }
 
+function handlePopupOpen () {
+  popup.classList.add("popup_active");
+}
+
+
+
+
+/**** EventListeners ****/
+
+edit.addEventListener("click", handlePopupOpen);
 xButton.addEventListener("click", handlePopupClose);
+formElement.addEventListener("submit", handleProfileFormSubmit);

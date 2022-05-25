@@ -1,15 +1,18 @@
 .popup__x-button {
-  max-width: 40px;
-  max-height: 40px;
+  transform: rotate(45deg);
+  width: 40px;
+  height: 40px;
   position: absolute;
-  right: -38px;
+  right: -40px;
   top: -40px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 618px) {
   .popup__x-button {
-    right: 0px;
-    top: -52px;
+    right: 5px;
+    top: -49px;
+    width: 26px;
+    height: 26px;
   }
 }
 
