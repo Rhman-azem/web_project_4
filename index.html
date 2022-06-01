@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Around The U.S</title>
   </head>
   <body class="root">
     <div class="page">
@@ -34,7 +34,7 @@
           </div>
         </div>
 
-        <button class="profile__add-button"></button>
+        <button type="button" class="profile__add-button"></button>
       </section>
 
       <section class="photo-grid">
@@ -65,7 +65,7 @@
 
             <div class="cards__title-wrapper">
               <h2 class="cards__title">Lake Louise</h2>
-              <button class="cards__like-button" id="lake"></button>
+              <button type="button" class="cards__like-button" id="lake"></button>
             </div>
           </li>
 
@@ -78,7 +78,7 @@
 
             <div class="cards__title-wrapper">
               <h2 class="cards__title">Bald Mountains</h2>
-              <button class="cards__like-button" id="mountains"></button>
+              <button type="button" class="cards__like-button" id="mountains"></button>
             </div>
           </li>
 
@@ -91,7 +91,7 @@
 
             <div class="cards__title-wrapper">
               <h2 class="cards__title">Latemar</h2>
-              <button class="cards__like-button" id="latemar"></button>
+              <button type="button" class="cards__like-button" id="latemar"></button>
             </div>
           </li>
 
@@ -104,7 +104,7 @@
 
             <div class="cards__title-wrapper">
               <h2 class="cards__title">Vanoise National Park</h2>
-              <button class="cards__like-button" id="vanoise"></button>
+              <button type="button" class="cards__like-button" id="vanoise"></button>
             </div>
           </li>
 
@@ -117,7 +117,7 @@
 
             <div class="cards__title-wrapper">
               <h2 class="cards__title">Lago di Braies</h2>
-              <button class="cards__like-button" id="lago"></button>
+              <button type="button" class="cards__like-button" id="lago"></button>
             </div>
           </li>
         </ul>
@@ -130,25 +130,25 @@
     </div>
 
     <div class="popup">
-      <div class="popup-contents">
-        <img class="popup__x-button" src="./images/buttons/plus.svg" alt="close button" />
-        <h3 class="popup-contents__title">Edit profile</h3>
-        <form class="popup-contents__form">
+      <div class="popup__content">
+        <button type="button" class="popup__x-button"></button>
+        <h3 class="popup__title">Edit profile</h3>
+        <form  name="popup-form" class="popup__form">
           <input
             value="Jacques Cousteau"
             type="text"
             name="name"
-            class="popup-contents__input popup-contents__input_type_name"
+            class="popup__input popup__input_type_name"
             placeholder="Name"
           />
           <input
             value="Explorer"
             type="text"
             name="about"
-            class="popup-contents__input popup-contents__input_type_about"
+            class="popup__input popup__input_type_about"
             placeholder="about me"
           />
-          <button type="submit" class="popup__submit-button" id="save">
+          <button type="submit" class="popup__submit-button">
             Save
           </button>
         </form>

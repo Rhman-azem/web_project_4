@@ -1,7 +1,7 @@
 .profile__info-name {
-  max-width: 373px;
+  max-width: 500px;
   color: #ffffff;
-  font-family: "Inter", Times, serif, sans-serif;
+  font-family: "Inter", Arial, serif, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 42px;
@@ -13,10 +13,11 @@
   grid-area: name;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 618px) {
   .profile__info-name {
     font-size: 22px;
     line-height: 26px;
     margin: auto;
+    max-width: 200px;
   }
 }

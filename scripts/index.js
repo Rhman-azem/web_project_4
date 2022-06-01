@@ -7,10 +7,10 @@ const xButton = document.querySelector(".popup__x-button");
 const showName = document.querySelector(".profile__info-name");
 const showAbout = document.querySelector(".profile__info-about");
 
-const formElement = document.querySelector("form");
+const formElement = document.querySelector(".popup__form");
 
-const profileInputName = document.querySelector(".popup-contents__input_type_name");
-const profileInputAbout = document.querySelector(".popup-contents__input_type_about");
+const profileInputName = document.querySelector(".popup__input_type_name");
+const profileInputAbout = document.querySelector(".popup__input_type_about");
 
 
 
@@ -38,6 +38,7 @@ function handlePopupClose() {
 
 function handlePopupOpen () {
   popup.classList.add("popup_active");
+  handleProfileInput();
 }
 
 

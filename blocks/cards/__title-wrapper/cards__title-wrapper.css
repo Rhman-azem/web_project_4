@@ -1,11 +1,9 @@
 .cards__title-wrapper {
-  min-height: 79px;
   background-color: white;
-
   border-radius: 0px 0px 10px 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px 0 21px;
+  padding: 25px 15px 25px 21px;
 }

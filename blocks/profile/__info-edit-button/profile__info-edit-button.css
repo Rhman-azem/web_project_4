@@ -7,17 +7,11 @@
   background: center no-repeat url("../../../images/buttons/Edit-Button.svg");
   border: 1px solid #ffffff;
 }
-@media screen and (max-width: 618px) {
-  .profile__info-edit-button {
-    margin-right: 10px;
-  }
-}
 
 @media screen and (max-width: 320px) {
   .profile__info-edit-button {
     max-width: 18px;
     max-height: 18px;
-    margin-left: 10px;
   }
 }
 

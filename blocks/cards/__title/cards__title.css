@@ -1,5 +1,5 @@
 .cards__title {
-  font-family: "Inter", Times, serif, sans-serif;
+  font-family: "Inter", Arial, serif, sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
@@ -7,4 +7,5 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  margin: 0;
 }

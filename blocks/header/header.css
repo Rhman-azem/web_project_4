@@ -5,9 +5,9 @@
   padding-bottom: 38px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 618px) {
   .header {
-    margin: 28px auto 0;
+    margin: 26px auto 0;
     padding-bottom: 32px;
   }
 }

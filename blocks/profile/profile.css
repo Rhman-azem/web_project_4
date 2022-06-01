@@ -3,8 +3,6 @@
   margin: 40px auto 0;
   display: grid;
   grid-template-areas: "user add-button";
-  align-items: center;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -22,18 +20,5 @@
       "user"
       "add-button";
     justify-content: center;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .profile {
-    margin: 42px auto 0;
-    max-width: 320px;
-    grid-template-areas:
-      "user"
-      "add-button";
-    justify-content: center;
-    flex-direction: column;
   }
 }

@@ -1,6 +1,5 @@
 .profile__info {
   display: grid;
-  grid-template-columns: minmax(auto, 373px) auto;
   grid-template-areas:
     "name button"
     "about about";
@@ -9,10 +8,10 @@
   gap: 10px 18px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 618px) {
   .profile__info {
     grid-template-columns: minmax(auto, 196px) auto;
     margin: 30px auto 0;
-    gap: 0;
+    gap: 10px;
   }
 }
